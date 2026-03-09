@@ -11,69 +11,6 @@ A full-stack web application for managing dental clinic appointments with an AI-
 
 ---
 
-## 🚀 Quick Start (Local Development)
-
-### 1. Clone the repository
-```bash
-git clone <your-repo-url>
-cd dentasmart
-npm install
-```
-
-### 2. Create Supabase Project
-1. Go to [supabase.com](https://supabase.com) and create a free account
-2. Click **New Project**
-3. Fill in your project name, database password, and region
-4. Wait for the project to be created (~2 minutes)
-
-### 3. Set Up the Database
-1. In your Supabase dashboard, go to **SQL Editor**
-2. Click **New Query**
-3. Copy and paste the entire contents of `supabase-schema.sql`
-4. Click **Run** – this creates all tables, RLS policies, and seed data
-
-### 4. Configure Environment Variables
-1. Copy the example env file:
-```bash
-cp .env.local.example .env.local
-```
-2. In your Supabase dashboard, go to **Settings → API**
-3. Copy the values and paste into `.env.local`:
-```
-NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
-```
-
-### 5. Run the Development Server
-```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000)
-
----
-
-## 📦 Deployment to Vercel
-
-### Step 1: Push to GitHub
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/dentasmart.git
-git push -u origin main
-```
-
-### Step 2: Deploy to Vercel
-1. Go to [vercel.com](https://vercel.com) and sign in
-2. Click **New Project**
-3. Import your GitHub repository
-4. In the **Environment Variables** section, add:
-   - `NEXT_PUBLIC_SUPABASE_URL` → your Supabase project URL
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY` → your Supabase anon key
-5. Click **Deploy**
-
----
-
 ## 🗄 Database Schema
 
 ### Tables
@@ -165,9 +102,4 @@ After running the schema:
 
 ---
 
-## 📞 Support
 
-For issues, check the Supabase and Next.js documentation:
-- [Supabase Docs](https://supabase.com/docs)
-- [Next.js Docs](https://nextjs.org/docs)
-- [Vercel Deployment](https://vercel.com/docs)
